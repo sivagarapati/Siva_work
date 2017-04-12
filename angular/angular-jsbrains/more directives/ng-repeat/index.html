@@ -1,0 +1,33 @@
+<HTML ng-app="myApp">
+
+<head>
+    <script src="angular.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <h1>More Directives app</h1>
+    <div ng-controller="moreDir as myCtrl">
+        ng-repeat with array
+        <div ng-repeat="i in myCtrl.myList">
+            <p>{{i}}</p>
+        </div>
+        ng-repeat with Array Object
+       &  ng- repeat variables 
+        <div ng-repeat="x in myCtrl.record">
+            <p>Element Index {{$index+1}} </p>
+            <p>First : {{$first}}</p>
+            <p>Middle : {{$middle}}</p>
+            <p>Last : {{$last}}</p>
+            <p>Even index :{{$even}}</p>
+            <p>odd index : {{$odd}}</p>
+            <p>Name: {{x.Name}}</p>
+            <p>Age : {{x.age}}</p>
+            <hr />
+            </div>
+
+    </div>
+
+</body>
+
+</HTML>

@@ -1,0 +1,23 @@
+<HTML ng-app="myApp">
+
+<head>
+    <script src="angular.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <h1>Nested ng-controller</h1>
+    <!-- highly recommed sytax-->
+    <div ng-controller="Ctrl1 as c1">
+        <p ng-bind="c1.test"></p>
+        <div ng-controller="Ctrl2 as c2">
+            <p ng-bind="c2.test"></p>
+        </div>
+    </div>
+<p>Every Angular applicaton has default global scope cxalled "root scope"</p>
+<br />
+<p>Scopes of nested controller from a heirarchy.A scope property lookup in HTMl 
+    Traverses,this heirarchy till it finds the property.All the way up to the root scope</p>
+</body>
+
+</HTML>
