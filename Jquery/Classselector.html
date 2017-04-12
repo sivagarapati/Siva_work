@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <style>
+        .myclass1{
+            height:200px;
+            width:200px;
+            background-color:#0094ff;
+            color:#ffd800;
+        }
+        .btnclass{
+            font-size:larger;
+            font-weight:bold;
+            color:#00ff21;
+        }
+    </style>
+</head>
+<body>
+    <div class="myclass1">
+        the example text for class selectors
+    </div>
+    <input class="btnclass" type="button" value="class selector"/>
+    <script>
+        $(document).ready(function(){
+                $('.btnclass').click(function () {
+                    $('div.myclass1').hide();
+                    alert("the content is hide");
+                });
+        });
+    </script>
+</body>
+</html>

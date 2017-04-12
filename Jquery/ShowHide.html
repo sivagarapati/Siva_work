@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body>
+
+    <p id="txt1">Hello world!.</p>
+    <p>hi one</p>
+
+    <input id="Show" type="button" value="Show" />
+
+    <input id="btnHide" type="button" value="Hide" />
+    <input id="btn" type="button" value="toggle"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btnHide").click(function () {
+                $("#txt1").hide();
+            });
+            $("#Show").click(function(){
+                $("#txt1").show();
+            });
+            $('input[value=toggle]').click(function () {
+                $('p').toggle();
+            })
+        });
+    </script>
+
+</body>
+</html>

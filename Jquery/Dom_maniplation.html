@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+    <div>
+        <span>jquery dom maniplations</span> this Hello world!.
+    </div>
+    <input type="button" value="text" id="btntext" />
+    <input type="button" value="html" id="btnhtml" />
+    <input type="button" value="val" id="btnval" />
+    <input type="text" placeholder="email" id="txtemail" />
+    <script>
+        $(document).ready(function () {
+            $('#btntext').click(function(){
+                alert($('div').text());
+            });
+            $('#btnhtml').click(function () {
+                alert($('div').html());
+            });
+            $('#btnval').click(function () {
+                $('#txtemail').val("hello @gmail.com");
+            });
+        });
+    </script>
+
+</body>
+</html>

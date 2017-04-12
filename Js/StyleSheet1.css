@@ -1,0 +1,20 @@
+﻿body {
+    background-color:aliceblue;
+}
+  * {
+  font-family: 'Georgia', 'Times', serif;
+}
+  h1,p{
+      color:slategray;
+  }
+  p{
+      font-size:18px;
+  }
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+img {
+  border-radius: 100%;
+}

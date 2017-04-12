@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <style>
+        .myclass1 {
+            height: 200px;
+            width: 200px;
+            background-color: #0094ff;
+            color: #ffd800;
+            display:none;
+        }
+
+        .btnclass {
+            font-size: larger;
+            font-weight: bold;
+            color: #00ff21;
+        }
+    </style>
+</head>
+<body>
+    <div class="myclass1">
+        fading methods
+    </div>
+    <input class="btnclass" type="button" value="fadeIn" />
+    <input class="btnclass2" type="button" value="fadeOut" />
+    <input class="btnclass3" type="button" value="fadeToggle" />
+    <input class="btnclass4" type="button" value="fadeTo"/>
+    <script>
+        $(document).ready(function () {
+            $('.btnclass').click(function () {
+                $('div.myclass1').fadeIn(1500, myFun1);
+            });
+            $('.btnclass2').click(function () {
+                $('div.myclass1').fadeOut(1500,myFun2);
+            });
+            $('.btnclass3').click(function () {
+                $('div.myclass1').fadeToggle(1500, myFun3);
+            });
+            $('.btnclass4').click(function () {
+                $('div.myclass1').fadeToggle(1500,0.4, myFun4);
+            });
+        });
+        function myFun1() {
+            alert("fadeIn is completed");
+        }
+
+        function myFun2() {
+            alert("fadeOut is completed");
+        }
+        function myFun3() {
+            alert("fade toggle");
+        }
+        function myFun4() {
+            alert("fade to opacity");
+        }
+    </script>
+</body>
+</html>

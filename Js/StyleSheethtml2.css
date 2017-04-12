@@ -1,0 +1,208 @@
+﻿
+
+body {
+    font-family: sans-serif;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.header {
+    background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 120px;
+    text-align: center;
+    padding: 20px 20px 50px 20px;
+}
+
+    .header .container {
+        position: relative;
+        top: 100px;
+    }
+
+    .header h1 {
+        color: #fff;
+        font-size: 61px;
+        line-height: 3px;
+        margin-top: 0;
+        margin-bottom: -54px;
+        text-transform: uppercase;
+    }
+
+
+    .header p {
+        color: #fff;
+        font-weight: 500;
+        letter-spacing: 8px;
+        margin-bottom: 40px;
+        margin-top: 0;
+        text-transform: uppercase;
+    }
+
+.btn {
+    color: #fff;
+    background: #000;
+    padding: 10px 40px;
+    text-decoration: none;
+}
+
+    .btn:hover {
+        background: #117bff;
+        cursor: pointer;
+        transition: background .5s;
+    }
+
+
+.nav {
+    background: #000;
+    height: 80px;
+    width: 100%;
+}
+
+    .nav ul {
+        list-style: none;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+    }
+
+        .nav ul li {
+            color: #fff;
+            display: inline-block;
+            height: 80px;
+            line-height: 80px;
+            list-style: none;
+            padding: 0 10px;
+        }
+
+            .nav ul li a {
+                color: white;
+                text-decoration: none;
+            }
+
+            .nav ul li:hover {
+                background: #117bff;
+                cursor: pointer;
+                transition: background .5s;
+            }
+
+
+.main .container {
+    margin: 10px 0px -10px 0px;
+    background-image: url('cloud.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.main h2 {
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.main p {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+
+
+.bottom {
+    color: #fff;
+    background-image: url('body_bg.jpg');
+    background-position: center center;
+    background-size: cover;
+    height: 400px;
+    text-align: center;
+}
+
+    .bottom .container {
+        position: relative;
+        top: 220px;
+    }
+
+
+.footer {
+    background: #000;
+}
+
+    .footer p {
+        color: #fff;
+        height: 80px;
+        font-size: 14px;
+        line-height: 80px;
+        margin: 0;
+    }
+
+           .bottom .sprite {
+            list-style-type: none;
+        }
+
+            .bottom .sprite li {
+                padding: 5px;
+                font-size: 16px;
+            }
+
+                .bottom .sprite li a div {
+                    height: 60px;
+                    line-height: 50px;
+                    display: inline block;
+                    padding-left: 60px;
+                    width: 0px;
+                    background: url('imagesprite.png') no-repeat;
+                }
+                .sprite li a div.facebook{
+                    background-position:-47px -29px;
+                }
+                .sprite li a div.youtube{
+                    background-position:-348px -22px;
+                }
+                .sprite li a div.share{
+                    background-position:-287px -23px;
+                }
+
+    /*.footer .facebook {
+        left: 0px;
+        width: 46px;
+        background: url('imagesprite.png') 501px 75px;
+    }
+
+    .footer a:hover {
+        background: url('imagesprite.png') 0 -45px;
+    }
+
+    .footer .youtube {
+        left: 63px;
+        width: 43px;
+        background: url('imagesprite.png') -353px 115px;
+    }
+
+    .footer a:hover {
+        background: url('imagesprite.png') -47px -45px;
+    }
+
+    .footer .gmail {
+        left: 129px;
+        width: 43px;
+        background: url('imagesprite.png') -303px -112px;
+    }
+
+    .footer a:hover {
+        background: url('imagesprite.png') -91px -45px;
+    }
+
+    .footer .sprite {
+        height: 50px;
+        width: 50px;
+    }*/

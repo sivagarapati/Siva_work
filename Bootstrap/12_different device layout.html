@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--Using the viewport meta tag to control layout on mobile browsers-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="sidebar.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container-fluid">
+        <h3>Phone entire width,desktops 1/2 width</h3>
+        <div class="row">
+            <div class="col-xs-12 col-md-6" style="background:lightblue;">display width</div>
+            <div class="col-xs-12 col-md-6" style="background:lightcoral;">display width</div>
+            <div class="col-xs-12 col-md-6" style="background:lightgreen;">display width</div>
+        </div>
+        <h3>Phone 1/2,desktop 1/3</h3>
+        <div class="row">
+            <div class="col-xs-6 col-md-4" style="background:lightblue;">display width</div>
+            <div class="col-xs-6 col-md-4" style="background:lightcoral;">display width</div>
+            <div class="col-xs-6 col-md-4" style="background:lightgreen;">display width</div>
+        </div>
+        <h3>offSetting colunms</h3>
+        <div class="row">
+            <div class="col-md-4" style="background:lightblue">display width</div>
+        </div>
+         <div class="row">
+            <div class="col-md-4 col-md-offset-2" style="background:lightcoral">display width</div>
+        </div>
+        <h3>Nesting rows</h3>
+        <div class="row">
+            <div class="col-md-9" style="background:lightseagreen; padding:10px">
+                Hello
+                <div class="row">
+                    <div class="col-md-6" style="background:lightblue">child1</div>
+                    <div class="col-md-6" style="background:lightcoral">child2</div>
+                </div>
+            </div>
+         </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--Using the viewport meta tag to control layout on mobile browsers-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="sidebar.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container-fluid">
+        <div id="wrapper">
+            <!--sidebar-->
+            <div class="sidebar-wrapper">
+                <ul class="sidebar-nav">
+                    <li><a href="#">Account</a></li>
+                    <li><a href="#">setting</a></li>
+                    <li><a href="#">logout</a></li>
+                </ul>
+            </div>
+            <!--page content-->
+            <div id="page-content-wrapper">
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <a href="#" class="btn btn-success" id="menu-toggle">Toggle menu</a>
+                        <h1>Sidebar layouts</h1>
+                        <p>navigation bar</p>
+                        <p>
+                            Familiarity with tools such as Gimp or Photoshop is a plus.Proficient understanding of cross- browser compatibility issues and ways to work around
+                            Proficient understanding of code versioning tool
+                            A solid understanding of how web applications work including security, session management, and best development practices
+                            Adequate knowledge of relational database systems, Object Oriented Programming and web application development
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--menu toggle script-->
+    <script>
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("menuDisplayed");
+        });
+    </script>
+</body>
+</html>
