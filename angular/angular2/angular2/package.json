@@ -1,0 +1,11 @@
+{
+  "name": "angular2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "systemjs-angular-loader.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kumar",
+  "license": "ISC"
+}
