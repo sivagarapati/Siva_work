@@ -1,0 +1,23 @@
+<html ng-app="myApp">
+
+<head>
+    <title>Angular | Passing data</title>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
+    <script src="Controller.js"></script>
+</head>
+
+<body>
+    <h1>Passing Data Between Different Scope</h1>
+    <div ng-controller="dataCtrl">
+
+        <input type="text" ng-model="message.property">
+        <p ng-repeat="i in [1]">
+            <!-- local scope-->
+            <input type="text" ng-model="message.property"> You Wrote:{{message.property}}
+        </p>
+        [outer] You Wrote : {{message.property}}
+    </div>
+</body>
+
+</html>

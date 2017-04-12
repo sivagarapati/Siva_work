@@ -1,0 +1,25 @@
+<html ng-app="myApp">
+
+<head>
+    <title>Angular | $scope</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
+    <script src="Controller.js"></script>
+</head>
+
+<body>
+    <h1>$scope | $watch,$digest</h1>
+    <div ng-controller="scopeCtrl">
+        <input type="text" ng-model="myText"> <br> You Updated Textbox : {{counter}} times
+
+    </div>
+    <hr>
+    <br>
+    <div ng-controller="digestCtrl">
+        <span>{{myRandomNumber}}</span>
+        <br>
+        <input type="button" value="Create Random Number" ng-click="digestCtrl()">
+
+    </div>
+</body>
+
+</html>

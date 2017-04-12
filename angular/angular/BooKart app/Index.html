@@ -1,0 +1,36 @@
+<html ng-app="myApp">
+
+<head>
+    <title>Angular Js BOOKART APP</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular-route.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <div ng-controller="headerCtrl">
+        <div class="container">
+            <div class="row">
+                <div id="header-wrapper">
+                    <span class="logo pull-left">{{appName.title}}</span>
+                    <span class="tagline pull-left">{{appName.tagLine}}</span>
+                    <div class="nav-wrapper pull-left">
+                        <ul class="nav nav-pills">
+                            <li ng-class="{active: nav.isActive('/books')}"><a href="#!/books">Books</a></li>
+                            <li ng-class="{active: nav.isActive('/kart')}"><a href="#!/kart">Kart</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div ng-view></div>
+</body>
+
+</html>
