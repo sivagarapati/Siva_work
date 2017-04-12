@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+
+    <p>Click the button to display the extracted part of the string.</p>
+    <input id="Button1" type="button" value="button"  onclick="myFunction()"/>
+    <p id="demo"></p>
+
+    <script>
+function myFunction() {
+   var s = "JavaScript";
+	var ar=[];
+    ar=s.split("");
+
+    document.getElementById("demo").innerHTML = ar;
+}
+    </script>
+
+</body>
+</html>

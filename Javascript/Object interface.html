@@ -1,0 +1,44 @@
+﻿
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <style>
+        table,tr,td{
+            border:1px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <input id="Button1" type="button" value="Click button Array" onclick="myFun();"/><p id="p1"></p>
+    <input id="Button1" type="button" value="Click button Object" onclick="myFun2();" /><p id="p2"></p>
+
+    <script>
+        //array type
+        function myFun() {
+            var cities = ["kansas","stlouis","missouri","newyork","florida"];
+            var list = "<ul>";
+            for (var i = 0; i < cities.length; i++) {
+                list += "<li>" + cities[i] + "</li>";
+            }
+            list += "</ul>";
+            document.getElementById("p1").innerHTML = list;
+        }
+        //object type
+        function myFun2() {
+            var obj = [{ firstName: "fname1", lastName: "lname1" },
+                { firstName: "fname2", lastName: "lname2" },
+            { firstName: "fname3", lastName: "lname3" }];
+            var mytable = "<table>";
+            mytable = "<tr><td> First Name </td><td> Last Name </td></tr> <br />";
+            for (var i = 0; i < obj.length; i++) {
+                mytable +="<tr><td>"+obj[i].firstName+"</td><td>"+obj[i].lastName+"</td></tr> <br />";
+            }
+            mytable += "</table>"; 
+            document.getElementById("p2").innerHTML = mytable;
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    FristName: <input id="Txt1" type="Text" />
+    lastName : <input id="Txt2" type="Text" />
+    <input id="Button1" type="button" value="Submit" onclick="namefun()" />
+    <br />
+    Full name: <p id="p1"></p>
+    <script>
+        function namefun() {
+            var first = document.getElementById("Txt1").value;
+            var last = document.getElementById("Txt2").value;
+            document.getElementById("p1").innerHTML = first + " " + last;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <h1>Function</h1>
+    <p> Function Expressions </p>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    nested object & function
+    <p id="p5"></p>
+    <p id="p6"></p>
+    <p id="p7"></p>
+    <p id="p8"></p>
+    <p id="p9"></p>
+    <br />
+    <div>
+        First Name: <p id="T1"></p>
+        last Name: <p id="T2"></p>
+        age: <p id="T3"></p>
+        Full Name: <p id="T4"></p>
+    </div>
+    <script>
+        //function declaration
+        function fun1(f1) {
+            return "hello " + f1;
+            //document.getElementById("p1").innerHTML = "hello "+ f1;
+        }
+        //function expression
+            var fn1 = fun1("world");  
+            document.getElementById("p1").innerHTML = fn1;
+            // Anonymous function
+            var fn2 = function () {
+                return "hello 2";
+            }
+            document.getElementById("p2").innerHTML = fn2();
+            //function in object
+            var fnobj = {
+                name: "siva",
+                age: 24
+            };
+            fnobj.fun = function () {
+                return "Hello3";
+            }
+            document.getElementById("p3").innerHTML = fnobj.fun();
+            //access object
+            var obj1 = {
+                firstname: "siva",
+                lastname: "kumar",
+                age: 24,
+                fullName: function () { return obj1.firstname + " " + obj1.lastname }
+            };
+            document.getElementById("T1").innerHTML = obj1.firstname;
+            document.getElementById("T2").innerHTML = obj1.lastname;
+            document.getElementById("T3").innerHTML = obj1.age;
+            document.getElementById("T4").innerHTML = obj1.fullName();
+            //this keyword
+            var obj1 = {
+                firstname: "siva",
+                lastname: "kumar",
+                age: 24,
+                fullName: function () { return this.firstname + " " + this.lastname }
+            };
+            var obj2 = obj1;
+            document.getElementById("p4").innerHTML = obj2.fullName();
+            //nested object function
+            var obj3 = {
+                firstname: "siva",
+                lastname: "kumar",
+                age: 24,
+                address: {
+                    street: "123 js",
+                    city: "JS",
+                    state: "TX"
+                },
+                isFromState: function (state) {
+                    return(obj3.address.state === state);
+                }
+            };
+            document.getElementById("p5").innerHTML = obj3.address.street;
+            document.getElementById("p6").innerHTML = obj3.isFromState("MO");
+            document.getElementById("p7").innerHTML = obj3.isFromState("TX");
+        //Default function arguments
+        //implicit arguments
+        //argument is not array
+            var add = function (a, b) {
+                var i, sum = 0;
+                for (i = 0; i < arguments.length; i++) {
+                    sum += arguments[i];
+                }
+                return "sum " + sum;
+            };
+            document.getElementById("p8").innerHTML = add(1, 2, 3, 4, 5, 6);
+
+
+            //Array methods
+            var myarray = [1, "hello", "world", 2, 3];
+            //add new element to array at last
+            myarray.push(10);
+            //delete the last element of the array
+            myarray.pop();
+            //delete the first element of the array
+            myarray.shift();
+            //add new element to array at front
+            myarray.unshift(12);
+
+            //for each method
+            var func = function (item) {
+                document.getElementById("p9").innerHTML = "for each element " + item;
+            };
+            myarray.forEach(func);
+
+    </script>
+</body>
+
+</html>

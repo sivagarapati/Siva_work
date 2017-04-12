@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <input id="Button1" type="button" value="first Person name" onclick="personNameFun()" /><p id="p1"></p>
+    <input id="Button2" type="button" value="number of items" onclick="lengthitemFun()"/><p id="p2"></p>
+    <input id="Button3" type="button" value="button" /><p id="p3"></p>
+    <script>
+        var people = {
+            "p1": {
+                "name": "Prasad D",
+                "getName": function () {
+                    return this.name;
+                }
+            },
+            "p2": {
+                "name": "Harsha Vardhan",
+                "age": 39,
+                "getName": function () {
+                    return this.name;
+                }
+            },
+            "p3": {
+                "NAME": "Anna Smith",
+                "age": "24",
+                "getName": function () {
+                    return this.NAME;
+                }
+            },
+            "p4": {
+                "name": "Peter Jones",
+                "age": null,
+                "getName": function () {
+                    return this.name;
+                }
+            }
+        }
+
+        function personNameFun() {
+            var name = people.p1.getName();
+            document.getElementById("p1").innerHTML = name;
+        }
+
+        function lengthitemFun() {
+            var length = Object.keys(people).length;
+            document.getElementById("p2").innerHTML = length;
+        }
+
+    </script>
+
+</body>
+</html>

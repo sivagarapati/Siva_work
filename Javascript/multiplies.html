@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    hello world:<input id="Button1" type="button" value="Try It" onclick="myFunction()" />
+    <p id="demo"></p>
+    <script>
+        function myFunction() {
+            for (var x = 1; x < 101; x++) {
+                if (x % 3 == 0) && (x % 5==0) {
+                    document.getElementById("demo").innerHTML = "FizzBuzz";
+                }
+                else if (x % 3 == 0) {
+                    document.getElementById("demo").innerHTML = "Fizz";
+                }
+                else if (x % 5 == 0) {
+                    document.getElementById("demo").innerHTML = "Buzz";
+                }
+                else {
+                    document.getElementById("demo").innerHTML = "x";
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>

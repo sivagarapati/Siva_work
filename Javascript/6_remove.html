@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    select
+    <select id="dropdown">
+        <option>A</option>
+        <option>B</option>
+        <option>C</option>
+        <option>D</option>
+        <option>E</option>
+        <option>F</option>
+    </select>
+    <br />
+    <input id="Button1" type="button" value="remove item" onclick="removefun()" />
+
+    <script>
+        function removefun() {
+            var x = document.getElementById("dropdown");
+            x.remove(x.selectedIndex);
+        }
+    </script>
+
+</body>
+</html>

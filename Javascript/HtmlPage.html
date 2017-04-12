@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Operators</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <script>
+        //scope is the set of variables, objects, and functions you have access. global scope & local scope variables declaratin
+        //IIFE (Immediately invoked function expression) is anonymous function
+        (function () {
+            var a = 10;
+            var b = 10;
+            document.getElementById("p1").innerHTML = (a + b);
+        })();
+        //global object that exists in browser environments called the window object.
+
+        //Hoisting is JavaScript's default behavior of moving declarations to the top
+        //hoisting is only work in fnction declaration,not work in function expression
+        someFn();
+        function someFn() {
+            console.log('Hello');
+        }
+
+        a = 10
+        document.getElementById("p2").innerHTML = b;
+        c++;
+
+        var a;
+        var b;
+        var c=20;
+
+        //strict Mode is opted from ECMA script 5
+        function fn1(){
+            "use strict";
+            var myName="";
+            myname="name";
+        }
+
+        //colsure - Global variables can be made local (private) ,Access state between function calls,
+        var a = 10;
+        function outer() {
+            var b = 20;
+            var inner = function () {
+                console.log(a);
+                console.log(b);
+            };
+            return inner;
+        }
+        var innerFn = outer();
+        innerFn();
+        //closure in callback (timer events)
+        var num = 10;
+        var fn = function () {
+            console.log(num);
+        }
+        setTimeout(fn, 5000);
+        console.log("ok");
+
+        //module pattern
+        //async callback
+        var i;
+
+        for (i = 0; i < 10; i++) {
+            (function () {
+                var currentValueofi = i;
+                setTimeout(function () {
+                    console.log(currentValueofi);
+                }, 1000);
+            })();
+        }
+
+        //creating objects of method arguments 
+        function createEmployee(firstName, lastName, gender, designation) {
+            var newEmp = {};
+            newEmp.firstName = firstName;
+            newEmp.lastName = lastName;
+            newEmp.gender = gender;
+            newEmp.designation = designation;
+            return newEmp;
+        };
+        var emp1 = createEmployee("siva", "kumar", "m", "sr");
+
+        //Constructors - new keyword
+        function createEmployee(firstName, lastName, gender, designation) {
+            newEmp.firstName = firstName;
+            newEmp.lastName = lastName;
+            newEmp.gender = gender;
+            newEmp.designation = designation;
+        };
+        var emp2 = new createEmployee("siva", "kumar", "m", "sr");
+
+
+    </script>
+</body>
+
+</html>

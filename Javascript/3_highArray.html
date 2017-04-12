@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <input id="Button1" type="button" value="Highest" onclick="highArrayfun()"/>
+    <p id="p1"></p>
+    <script>
+        function highArrayfun() {
+            var arr = [1, 2, 3, 7, 9, 10, 15];
+            var max = Math.max(...arr);
+            document.getElementById("p1").innerHTML ="highest Integer in Array = "+arr+" highest "+ max;
+        }
+    </script>
+</body>
+</html>

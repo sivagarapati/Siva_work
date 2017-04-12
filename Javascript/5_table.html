@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <style>
+        table,td{
+            border:1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <table id="Table">
+        <tr>
+            <td>cell1</td>
+            <td>cell2</td>
+        </tr>
+        <tr>
+            <td>cell1</td>
+            <td>cell2</td>
+        </tr>
+        <tr>
+            <td>cell1</td>
+            <td>cell2</td>
+        </tr>
+    </table>
+    <br />
+    click to add rows to table
+    <input id="Button1" type="button" value="addRow" onclick="addRowfun()"/>
+    <script>
+        function addRowfun() {
+            var table = document.getElementById("Table");
+            var row = table.insertRow(0);
+            var cell1 = row.insertCell(0); 
+            var cell2 = row.insertCell(1);
+            cell1.innerHTML = "cell1";
+            cell2.innerHTML = "cell2";
+        }
+    </script>
+
+</body>
+</html>

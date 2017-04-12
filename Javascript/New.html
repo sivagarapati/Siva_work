@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    select : <select id="cities" onchange="selectfun();">
+        <option>newyork</option>
+        <option>kansas</option>
+        <option>texas</option>
+        <option>chicago</option>
+        <option>columbus</option>
+    </select>
+    <p id="p1"></p>
+    <img src="download.jpg" alt="dog" width="100" height="100" onmouseover="imageoverfun(this)" ; onmouseout="imageoutfun(this);" />
+    <br />
+    <input id="Text1" type="text" onkeyup="keydownfun();" />
+    <!-- onkeyup & onkeydown events works same-->
+    <p id="p2"></p>
+    <img src="download.jpg" alt="dog" width="100" height="100" onmouseen
+    <script>
+        //
+        function selectfun() {
+            var val1 = document.getElementById("cities").value;
+            document.getElementById("p1").innerHTML = val1;
+        }
+        //mouse
+        function imageoverfun(myimage) {
+            myimage.style.width = "200px";
+            myimage.style.height = "200px";
+        }
+        function imageoutfun(myimage) {
+            myimage.style.width = "100px";
+            myimage.style.height = "100px";
+        }
+        //
+        function keydownfun() {
+            var text = document.getElementById("Text1").value;
+            document.getElementById("p2").innerHTML = text;
+        }
+
+    </script>
+</body>
+</html>

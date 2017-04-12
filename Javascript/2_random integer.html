@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <input id="Button1" type="button" value="random number" onclick="randfun()" />
+    <p id="p1"></p>
+    <script>
+        function randfun() {
+            var rand;
+            rand = Math.floor(Math.random() *100) + 1;
+            document.getElementById("p1").innerHTML = rand;
+        }
+    </script>
+
+</body>
+</html>

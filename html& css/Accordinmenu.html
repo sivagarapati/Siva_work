@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <style>
+                /*Accordion navigation*/
+                /*button.accordion {
+            background-color: #000000;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            position:relative;
+        }
+        button.accordion.active, button.accordion:hover {
+            background-color: red;
+        }
+        div.panel {
+
+            display: none;
+            background-color: black;
+            color:white;
+        }*/
+
+                /*html {
+                    width: 100%;
+                    height: 100%;
+                    perspective: none;
+                    overflow-y: scroll;
+                    background-color: #808080;
+                    font-family: sans-serif;
+                    color: #000000;
+                }*/
+
+                body {
+                    min-height: 0;
+                    display: inline-block;
+                    position: relative;
+                    margin: 90px 0;
+                    background-color: #ffffff;
+                    padding: 30px;
+                }
+
+
+                #container h1, h2 {
+                    color: #ff0000;
+                }
+
+                h1 {
+                    text-transform: uppercase;
+                    font-size: 36px;
+                    line-height: 42px;
+                    letter-spacing: 3px;
+                    font-weight: 100;
+                }
+
+        h2 {
+            font-size: 26px;
+            line-height: 34px;
+            font-weight: 300;
+            letter-spacing: 1px;
+            display: block;
+            background-color: #ffffff;
+            margin: 0;
+            cursor: pointer;
+        }
+
+        p {
+            color: #000000;
+            font-size: 17px;
+            line-height: 26px;
+            letter-spacing: 1px;
+            position: relative;
+            overflow: hidden;
+            max-height: 800px;
+            opacity: 1;
+            transform: translate( 0, 0 );
+            margin-top: 14px;
+            z-index: 2;
+        }
+        ul {
+            list-style: none;
+            perspective: 900;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            position: relative;
+            padding: 0;
+            margin: 0;
+            padding-bottom: 4px;
+            padding-top: 18px;
+            border-top: 1px dotted #808080;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>Accordion</h2>
+
+    <!--<button class="accordion">Section 1</button>
+        <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <button class="accordion">Section 2</button>
+        <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <button class="accordion">Section 3</button>
+        <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].onclick = function(){
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        }
+    }
+        </script>-->
+    <div id="containeer">
+        <h1>CSS + HTML only Accordion Element</h1>
+        <ul>
+            <li>
+                <input type="checkbox" checked>
+                <i></i>
+                <h2>Languages Used</h2>
+                <p>This page was written in HTML and CSS. The CSS was compiled from SASS. I used Normalize as my CSS reset and -prefix-free to save myself some headaches. I haven't quite gotten the hang of Slim for compiling into HTML, but someday I'll use it since its syntax compliments that of SASS. Regardless, this could all be done in plain HTML and CSS.</p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i></i>
+                <h2>How it Works</h2>
+                <p>Using the sibling and checked selectors, we can determine the styling of sibling elements based on the checked state of the checkbox input element. One use, as demonstrated here, is an entirely CSS and HTML accordion element. Media queries are used to make the element responsive to different screen sizes.</p>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i></i>
+                <h2>Points of Interest</h2>
+                <p>By making the open state default for when :checked isn't detected, we can make this system accessable for browsers that don't recognize :checked. The fallback is simply an open accordion. The accordion can be manipulated with Javascript (if needed) by changing the "checked" property of the input element.</p>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

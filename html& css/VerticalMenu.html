@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <style>
+        /*vertical navigation*/
+        .nav-Ver ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color: black;
+            color: white;
+        }
+
+            .nav-Ver ul li a, .dropbtn {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                padding: 8px 16px;
+            }
+
+                .nav-Ver ul li a:hover, .dropbtn:hover .dropbtn {
+                    background-color: red;
+                }
+
+            .nav-ver ul li .dropbtn {
+                display: inline-block;
+            }
+
+            .nav-Ver ul li .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: red;
+                min-width: 60px;
+                box-shadow: 0px 0px 15px 2px;
+            }
+
+                .nav-Ver ul li .dropdown-content a {
+                    color: black;
+                    padding: 10px 15px;
+                    text-decoration: none;
+                    display: block;
+                    text-align: center;
+                }
+
+            .nav-Ver ul li .dropbtn:hover .dropdown-content {
+                display: block;
+            }
+    </style>
+</head>
+<body>
+    <h2>Vertical Navigation</h2>
+    <div class="nav-Ver" width="500px">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li>
+                <a href="#" class="dropbtn">Contact</a>
+                <div class="dropdown-content">
+                    <a href="#">Contact1</a>
+                    <a href="#">Contact2</a>
+                </div>
+            </li>
+            <li><a ng-href="#">services</li>
+        </ul>
+    </div>
+</body>
+</html>

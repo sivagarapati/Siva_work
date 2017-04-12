@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <p id="p1"><p>
+        <input id="Button1" type="button" value="Display Time" onclick="myfun();" />
+        <script>
+            function myfun() {
+                var date = new Date();
+                document.getElementById("p1").innerHTML = "Time= " + date.toLocaleTimeString() + " Date=  " + date.toLocaleDateString();
+            }
+        </script>
+</body>
+</html>

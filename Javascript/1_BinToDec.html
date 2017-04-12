@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <input id="bin1" type="text" />
+    <input id="Button1" type="button" value="getdecimal" onclick="convfun()"/>
+    <p id="p1"></p>
+    <script>
+        function convfun() {
+            var bin = document.getElementById("bin1").value;
+            var dec = parseInt(bin, 2);
+            
+            document.getElementById("p1").innerHTML = "Conversion of binary number = "+bin+" to decimal = "+ dec;
+
+        }
+    </script>
+</body>
+</html>

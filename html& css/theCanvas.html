@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <style>
+        #transition {
+            width: 500px;
+            height: 80px;
+            background: #008ad3;
+            transition: width 2s, height 2s;
+        }
+            #transition:hover {
+                width: 200px;
+                height: 200px;
+                background: green;
+            }
+    </style>
+</head>
+<body>
+    
+    
+    
+    <br />
+    <br />
+    
+
+    <h1>canvas</h1>
+    <canvas id="mycanvas" height="100" width="200" border="solid 1px red"></canvas>
+    <script>
+        //canvas to display text
+        var c = document.getElementById("mycanvas");
+        var ctx = c.getContext("2d");
+        ctx.font = "30px Arial";
+        ctx.strokeText("Hello World", 20, 40, 150);
+    </script>
+    <h2> CSS transition effection</h2>
+    <div id="transition">
+       
+    </div>
+</body>
+</html>

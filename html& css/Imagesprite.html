@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <style>
+        /*image sprite*/
+        .sprite {
+            list-style-type: none;
+        }
+
+            .sprite li {
+                padding: 5px;
+                font-size: 16px;
+            }
+
+                .sprite li a div {
+                    height: 60px;
+                    line-height: 50px;
+                    display: inline block;
+                    padding-left: 60px;
+                    width: 0px;
+                    background: url('imagesprite.png') no-repeat;
+                }
+
+                    .sprite li a div.facebook {
+                        background-position: -47px -29px;
+                    }
+
+                    .sprite li a div.youtube {
+                        background-position: -348px -22px;
+                    }
+
+                    .sprite li a div.share {
+                        background-position: -287px -23px;
+                    }
+
+                    .sprite li a div.facebook:hover {
+                        background-position: -47px -95px;
+                    }
+
+                .sprite li div.youtube:hover {
+                    background-position: -348px -95px;
+                }
+
+                .sprite li a div.share:hover {
+                    background-position: -287px -95px;
+                }
+    </style>
+</head>
+<body>
+    <h2>Image Sprite</h2>
+    <div class="sprite">
+        <ul>
+            <li><a href="#"><div class="facebook">FaceBook</div></a></li>
+            <li><a href="#"><div class="youtube">Youtube</div></a></li>
+            <li><a href="#"><div class="share">Share</div></a></li>
+        </ul>
+    </div>
+</body>
+</html>

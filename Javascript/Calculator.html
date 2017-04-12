@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <p id="p1"><p>
+    <input id="Button1" type="button" value="Display Time" onclick="myfun();" />
+    <br />
+    value 1 = <input id="val1" type="text" /><br />
+    value 2 = <input id="val2" type="text" />
+    <br />
+    result = <p id="p2"></p>
+    <input id="Button1" type="button" value="Add" onclick="addfun()" />
+    <input id="Button1" type="button" value="sub" onclick="subfun()"/>
+    <input id="Button1" type="button" value="Mul" onclick="mulfun()" />
+    <input id="Button1" type="button" value="rem" onclick="remfun()" />
+    <input id="Button1" type="button" value="Div" onclick="divfun()" />
+    <br />
+    <input id="Button1" type="button" value="increment" onclick="incfun()"/><p id="p5"></p>
+    <script>
+    function myfun(){
+        var date=new Date();
+        document.getElementById("p1").innerHTML="Time= "+date.toLocaleTimeString()+" Date=  "+date.toLocaleDateString();
+    }
+
+    function addfun() {
+        var x = document.getElementById("val1").value;
+        var y = document.getElementById("val2").value;
+        var z = parseInt(x) + parseInt(y);
+        document.getElementById("p2").innerHTML = z;
+    }
+    function subfun() {
+        var x = document.getElementById("val1").value;
+        var y = document.getElementById("val2").value;
+        var z = parseInt(x) - parseInt(y);
+        document.getElementById("p2").innerHTML = z;
+    }
+    function mulfun() {
+        var x = document.getElementById("val1").value;
+        var y = document.getElementById("val2").value;
+        var z = parseInt(x) * parseInt(y);
+        document.getElementById("p2").innerHTML = z;
+    }
+    function remfun() {
+        var x = document.getElementById("val1").value;
+        var y = document.getElementById("val2").value;
+        var z = parseInt(x) % parseInt(y);
+        document.getElementById("p2").innerHTML = z;
+    }
+    function divfun() {
+        var x = document.getElementById("val1").value;
+        var y = document.getElementById("val2").value;
+        var z = parseInt(x) / parseInt(y);
+        document.getElementById("p2").innerHTML = z;
+    }
+
+    function incfun() {
+        for (var i = 0; i < 10; i++) {
+            document.getElementById("p5").innerHTML += i + "<br/>";
+        }
+    };
+
+
+    </script>
+</body>
+</html>
