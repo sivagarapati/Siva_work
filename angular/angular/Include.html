@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <title>angular</title>
+	<meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.js"></script>
+</head>
+<body ng-controller="myCtrl">
+    <div ng-include="'DummyInclude.html'"></div>
+    <script>
+        var myApp = angular.module("myApp", []);
+        myApp.controller("myCtrl", function ($scope) {   //$scope is pubile variable, we access all view
+
+        });
+    </script>
+</body>
+
+</html>

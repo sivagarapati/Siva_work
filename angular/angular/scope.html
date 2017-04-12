@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.js"></script>
+</head>
+<body>
+    <!--view part in MVC-->
+    <div ng-controller="ctrl">
+        select the language:
+        <button ng-click="java()">JAVA</button>
+        <button ng-click="net()">.net</button>
+        <button ng-click="php()">PHP</button>
+        <button ng-click="javascript()">Javascript</button>
+        <br />
+        your selected language: {{myfavLang}}
+    </div>
+    <script>
+        //controller part in MVC
+        var lang = angular.module("myApp", []);
+        lang.controller("ctrl", function ($scope) {
+            $scope.myfavLang = "None";
+
+            $scope.java = function () {
+                $scope.myfavLang = "Java";
+            };
+
+            $scope.net = function () {
+                $scope.myfavLang = ".NET";
+            };
+
+            $scope.php = function () {
+                $scope.myfavLang = "PHP";
+            };
+
+            $scope.javascript = function () {
+                $scope.myfavLang = "Java Script";
+            };
+        });
+    </script>
+</body>
+</html>

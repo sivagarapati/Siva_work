@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.js"></script>
+</head>
+<body ng-controller="myController">
+    <input ng-model="name" id="Text1" type="text" /> <!--name is the scope variable-->
+    <br />
+    <span ng-bind="name"></span>
+    <!--<input ng-click="myFun();" id="Button1" type="button" value="button" />--> <!--ng-click work as onclick in Javascript-->
+    <input ng-dblclick="myFun();" id="Button1" type="button" value="button" /> <!--Double click event-->
+    <!--ng-repeat is for Loop in JavaScript-->
+    <br />
+    <table>
+        <tr>
+            <td>FirstName</td>
+            <td>LastName</td>
+        </tr>
+        <tr ng-repeat="name in objarray">
+            <td ng-bind="name.fName"></td>
+            <td ng-bind="name.lName"></td>
+        </tr>
+    </table>
+    <!--<p>{{mytext}}</p>
+    Total :{{10+20}}
+    <script>
+        var myapp = angular.module("myApp", []);
+        myapp.controller("myCtrl", function ($scope) {
+            $scope.mytext = "Hello World!";
+        });
+
+    </script>-->
+    <script>
+        var myApp = angular.module("myApp", []);
+        myApp.controller("myController", function ($scope) {   //$scope is pubile variable, we access all view
+            $scope.myFun = function () {
+                $scope.name = "Hello World!";
+                $scope.objarray = [{ fName: "fname1", lName: "lname1" }, { fName: "fname2", lName: "lname2" }];
+            }
+        });
+    </script>
+</body>
+</html>

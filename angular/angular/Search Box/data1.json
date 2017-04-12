@@ -1,0 +1,33 @@
+﻿{
+    "records": [{
+            "Name": "siva",
+            "Age": "20",
+            "Color": "red"
+        },
+        {
+            "Name": "kumar",
+            "Age": "21",
+            "Color": "blue"
+        },
+        {
+            "Name": "alex",
+            "Age": "31",
+            "Color": "yellow"
+        },
+        {
+            "Name": "peter",
+            "Age": "???",
+            "Color": "green"
+        },
+        {
+            "Name": "name5",
+            "Age": "50",
+            "Color": "black"
+        },
+        {
+            "Name": "name 6",
+            "Age": "25",
+            "Color": "white"
+        }
+    ]
+}

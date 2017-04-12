@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <title>angular filter</title>
+	<meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.js"></script>
+</head>
+<body ng-controller="myCtrl">
+    <h1> angular filter</h1>
+    Your Name: <input type="text" ng-model="name" /><br />
+    {{"welcome" + name |uppercase}}<br />
+    {{"welcome "+ name |lowercase}} <br />
+
+    Currency : <input type="text" ng-model="price" /><br />
+    "Welcome"{{price |currency}} <br />
+    "Welcome"{{price |currency:"Rs."}} <br />
+
+    Number: <input type="text" ng-model="integer" /><br />
+    "Welcome"{{integer | number }}<br />
+    "Welcome" {{integer |number:5}}
+    <script>
+        var filter = angular.module("myApp", []);
+        filter.controller("myCtrl", function ($scope) {
+        
+        });
+
+    </script>
+
+</body>
+</html>
